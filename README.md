@@ -26,7 +26,8 @@ The script will read "./temp/sre14.mat", and the results are
 5. some experiment results
 
 A. train lambda with development and train vectors
-exp1     , D EER, E EER,      , D DCF, E EER, factor
+
+0.fac exp, D EER, E EER,      , D DCF, E EER, factor
 1.  2.531, 2.794, 2.354, 0.272, 0.277, 0.267, 1.1
 2.  2.554, 2.825, 2.336, 0.269, 0.272, 0.266, 1.2
 3.  2.456, 2.677, 2.176, 0.250, 0.255, 0.247, 1.3
@@ -39,7 +40,8 @@ exp1     , D EER, E EER,      , D DCF, E EER, factor
 10. 2.108, 2.261, 1.995, 0.242, 0.249, 0.237, 2.0
 
 B. train lambda with development vectors
-exp2     , D EER, E EER,      , D DCF, E EER, factor
+
+0.fac exp, D EER, E EER,      , D DCF, E EER, factor
 1.  2.182, 2.426, 1.994, 0.241, 0.244, 0.237, 1.1
 2.  2.257, 2.438, 2.099, 0.237, 0.243, 0.232, 1.2
 3.  2.369, 2.487, 2.225, 0.240, 0.245, 0.236, 1.3
@@ -52,7 +54,8 @@ exp2     , D EER, E EER,      , D DCF, E EER, factor
 10. 2.506, 2.549, 2.435, 0.275, 0.281, 0.269, 2.0
 
 C.  train lambda with development and train vectors
-exp3     , D EER, E EER,      , D DCF, E EER, factor
+
+0.dim exp, D EER, E EER,      , D DCF, E EER, factor
 1.  3.522, 3.556, 3.505, 0.498, 0.507, 0.491, 50
 2.  2.306, 2.329, 2.267, 0.288, 0.294, 0.284, 100
 3.  2.032, 2.241, 1.919, 0.239, 0.245, 0.234, 150
