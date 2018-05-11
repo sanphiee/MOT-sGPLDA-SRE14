@@ -2,7 +2,8 @@
 Multiobjective Optimization Training of PLDA for Speaker Verification
 
 1. prepare data
-Put NIST SRE14 offical data on "./data/", there are 
+make directory ./data and ./temp
+put NIST SRE14 offical data on "./data/", there are 
 "development_data_labels.csv
 dev_ivectors.csv
 ivec14_sre_segment_key_release.tsv
