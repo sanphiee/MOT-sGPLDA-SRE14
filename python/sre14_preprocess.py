@@ -26,7 +26,7 @@ def load_model_key(filename, model_ids):
     from
     Parameters
     ----------
-    filename : string
+    filename : stringb
         Path to target_speaker_models.csv
     model_ids : list
         List of model ivectorids from model_ivectors.csv
