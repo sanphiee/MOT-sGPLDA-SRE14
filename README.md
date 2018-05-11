@@ -1,8 +1,7 @@
 # MOT-sGPLDA-SRE14
 Multiobjective Optimization Training of PLDA for Speaker Verification
 
-1. prepare data
-make directory ./data and ./temp
+1. prepare data, make directory ./data and ./temp, 
 put NIST SRE14 offical data on "./data/", there are 
 "development_data_labels.csv
 dev_ivectors.csv
@@ -12,19 +11,19 @@ model_ivectors.csv
 target_speaker_models.csv
 test_ivectors.csv"
 
-2. run ./python/sre14_preprocess.py
+2. run ./python/sre14_preprocess.py.
 It will generate "./temp/sre14.mat"
 
-3. run ./matlab/gplda_demo.m
+3. run ./matlab/gplda_demo.m.
 The script will read "./temp/sre14.mat", and the results are
 " 2.347, 2.456 (Dev, EER),  2.307 (Eval, EER), 
  0.264, 0.269 (Dev, MDCF), 0.261 (Eval, MDCF)". 
 
-4. run ./matlab/moplda_demo.m
+4. run ./matlab/moplda_demo.m.
 The script will read "./temp/sre14.mat", and the results are
 " 2.040, 2.193, 1.931, 0.233, 0.239, 0.229"
 
-5. some experiment results
+5. some experiment results.
 
 A. train lambda with development and train vectors
 
