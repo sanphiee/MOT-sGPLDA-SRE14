@@ -1,33 +1,28 @@
 # MOT-sGPLDA-SRE14
 Multiobjective Optimization Training of PLDA for Speaker Verification
 
-1. prepare data, make directory ./data and ./temp, 
-put NIST SRE14 offical data on "./data/", there are 
-"development_data_labels.csv
-dev_ivectors.csv
-ivec14_sre_segment_key_release.tsv
-ivec14_sre_trial_key_release.tsv
-model_ivectors.csv
-target_speaker_models.csv
-test_ivectors.csv"
+1. prepare data, make directory ./data and ./temp \
+put NIST SRE14 i-vector challenge offical data on "./data/", there are "development_data_labels.csv, dev_ivectors.csv, ivec14_sre_segment_key_release.tsv, ivec14_sre_trial_key_release.tsv, model_ivectors.csv, target_speaker_models.csv, test_ivectors.csv"
 
-2. run ./python/sre14_preprocess.py.
+2. run ./python/sre14_preprocess.py. \
 It will generate "./temp/sre14.mat"
 
-3. run ./matlab/gplda_demo.m.
-The script will read "./temp/sre14.mat", and the results are
-" 2.347, 2.456 (Dev, EER),  2.307 (Eval, EER), 
- 0.264, 0.269 (Dev, MDCF), 0.261 (Eval, MDCF)". 
+3. run ./matlab/gplda_demo.m \
+The script will read "./temp/sre14.mat", and the results are \
+2.347, 2.456 (Development dataset, EER), 2.307 (Evaluation dataset, EER),  \
+0.264, 0.269 (Development dataset, MDCF), 0.261 (Evaluation dataset, MDCF). 
 
-4. run ./matlab/moplda_demo.m.
-The script will read "./temp/sre14.mat", and the results are
-" 2.040, 2.193, 1.931, 0.233, 0.239, 0.229"
+4. run ./matlab/moplda_demo.m \
+The script will read "./temp/sre14.mat", and the results are \
+2.040, 2.193 (Development dataset, EER), 1.931 (Evaluation dataset, EER),  \
+0.233, 0.239 (Development dataset, MDCF), 0.229 (Evaluation dataset, MDCF).
 
 5. some experiment results.
 
 A. train lambda with development and train vectors
 
-0.fac exp, D EER, E EER,      , D DCF, E EER, factor
+0.  factor experiment, \
+    A EER, D EER, E EER, A DCF, D DCF, E DCF, factor \
 1.  2.531, 2.794, 2.354, 0.272, 0.277, 0.267, 1.1
 2.  2.554, 2.825, 2.336, 0.269, 0.272, 0.266, 1.2
 3.  2.456, 2.677, 2.176, 0.250, 0.255, 0.247, 1.3
@@ -41,7 +36,8 @@ A. train lambda with development and train vectors
 
 B. train lambda with development vectors
 
-0.fac exp, D EER, E EER,      , D DCF, E EER, factor
+0. factor experiment, \
+    A EER, D EER, E EER, A DCF, D DCF, E DCF, factor \
 1.  2.182, 2.426, 1.994, 0.241, 0.244, 0.237, 1.1
 2.  2.257, 2.438, 2.099, 0.237, 0.243, 0.232, 1.2
 3.  2.369, 2.487, 2.225, 0.240, 0.245, 0.236, 1.3
@@ -55,7 +51,8 @@ B. train lambda with development vectors
 
 C.  train lambda with development and train vectors
 
-0.dim exp, D EER, E EER,      , D DCF, E EER, factor
+0. dimension experiment, \
+    A EER, D EER, E EER, A DCF, D DCF, E DCF, factor \
 1.  3.522, 3.556, 3.505, 0.498, 0.507, 0.491, 50
 2.  2.306, 2.329, 2.267, 0.288, 0.294, 0.284, 100
 3.  2.032, 2.241, 1.919, 0.239, 0.245, 0.234, 150
