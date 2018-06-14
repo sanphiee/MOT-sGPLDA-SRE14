@@ -52,7 +52,7 @@ B. train lambda with development vectors
 C.  train lambda with development and train vectors
 
 0. dimension experiment, \
-    A EER, D EER, E EER, A DCF, D DCF, E DCF, factor
+    A EER, D EER, E EER, A DCF, D DCF, E DCF, dimension
 1.  3.522, 3.556, 3.505, 0.498, 0.507, 0.491, 50
 2.  2.306, 2.329, 2.267, 0.288, 0.294, 0.284, 100
 3.  2.032, 2.241, 1.919, 0.239, 0.245, 0.234, 150
